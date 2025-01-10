@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CentroVet - A sua veterinária</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+        a{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            font-size: 12px;
+        }
+        a:link, :visited {
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        ul{
+            text-decoration: none;
+            text-decoration-line: none;
+            padding:0px;
+            margin: 20px;
+        }
+        thead{
+            background-color: #748ca4;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+            font-size: 18px;
+        }
+        tbody{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            text-align: justify;
+            background-color: #fbfbf3;
+            color: black;
+        }
+        td,th{
+          padding: 10px;  
+        }
+        table{
+            border: 2px;
+            border-color: black;
+        }
+        form{
+            width: 300px;
+            
+        }
+        #contato fieldset{
+            padding: 20px 10px 20px 10px;
+        }
+        label{
+            display: inline-block;
+            
+        }
+        input{
+            display: inline-block;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="index.html">Home</a></li><br>
+                <li><a href="sobre.html">Sobre a Clínica</a></li><br>
+                <li><a href="horario.html">Horário de Atendimento</a></li><br>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header" align="center" >
+                <img src="banner5.jpg" alt="" height="200px" />
+                <!-- Aqui vai o seu header -->
+            </div>
+    
+            <div class="content">
+                <h1>Contato</h1>
+                <hr>
+                <h2>Entre em contato conosco através dos canais abaixo:</h2>
+                <p>↠ Telefone comercial: (21) 2772-1292</p>
+                <p>↠ Telefone celular: (21) 99123-7181</p>
+                <p>↠ E-mail: contato@veterinariaquatropatas.com.br</p>
+                <p>↠ endereço: Av. Nossa Sra. de Copacabana, 22 - Leme, Rio de Janeiro - RJ, 22010-122</p>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.6414234733206!2d-43.17597242546808!3d-22.963429279215255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd55abeb7828b%3A0x64be5381adb7e4a6!2sAv.%20Nossa%20Sra.%20de%20Copacabana%2C%2022%20-%20Copacabana%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022010-122!5e0!3m2!1spt-BR!2sbr!4v1736485780231!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h2>Fale conosco</h2>
+                <form name="contato" method="get" action="#" >
+                    <fieldset> 
+                        <legend>Dados Pessoais</legend>
+                        <label>Nome</label><br> <input type="text" name="Nome"><br>
+                        <label>E-mail</label><br><input type="text" name="E-mail"><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Mensagem</legend>
+                        <label>Assunto</label><br><input type="text" name="Assunto"><br>
+                        <label>Mensagem</label><br><textarea name="Mensagem"></textarea><br>
+                    </fieldset>
+                    <button type="reset">Limpar</button> <button type="submit">Enviar</button>
+                </form>
+                
+                <!-- Aqui vai o seu conteúdo -->
+                 <hr>
+            </div>
+    
+            <div class="footer" align="center">
+                <h5>21 2772-1292 | 21 99123-7181 | <a href="mailto:contato@veterinariaquatropatas.com.br">contato@veterinariaquatropatas.com.br</a></h5>
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
