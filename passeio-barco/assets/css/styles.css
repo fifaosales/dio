@@ -1,0 +1,176 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background: url('/passeio-barco/assets/img/ilhastijuca.jpg') no-repeat center center/cover;
+    object-position: 0px 100px;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+/* Adiciona um overlay escuro para melhorar a legibilidade do texto */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade aqui */
+    z-index: 1;
+}
+
+header h1, header p, header .btn {
+    position: relative;
+    z-index: 2;
+}
+header image {
+    text-align: left;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    z-index: 3;
+    opacity: 0.5; /* 50% de transparência */
+    transition: opacity 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+#sobre {
+    margin-top: 20px;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1); /* Fundo branco com 10% de opacidade */
+}
+
+#sobre::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/passeio-barco/assets/img/ilhas-tijucas-foto.jpeg') no-repeat center center/cover;
+    opacity: 0.5; /* Transparência da imagem de fundo */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+#sobre .container {
+    background: rgba(255, 255, 255, 0.6); /* Faixa branca com 80% de opacidade */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    display: inline-block; /* Ajusta o tamanho ao conteúdo */
+    max-width: 800px; /* Largura máxima da faixa */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+#sobre, #destaques, #contato {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#sobre ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#sobre ul li {
+    margin-bottom: 10px;
+}
+
+.destaques-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.destaque-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.destaque-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 3px;
+    background-color: lightblue;
+}

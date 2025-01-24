@@ -5,3 +5,197 @@ github
 git add .
 git commit - m "comentario"
 git push -u origin main
+
+css
+# colocamos para id <id=
+. colocamos para class <class=
+
+exemplo colocando duas classes
+<li class="seletores-mais-comuns texto-maiusculo">
+
+seletor universal
+* {
+    
+}
+
+seletor title <title= mexer em todos que tenham
+[title]{
+
+}
+
+pra mexer em um titulo especificio
+[title="nometitulo"]{
+
+}
+para procurar uma parte do titulo
+[title~="Streaming"]{
+   title="sdsdsdsd Streaming"
+}
+usando |
+[title|="Streaming"] {
+    title="sdsdsdsd-Streaming"
+}
+prefixo
+[href^="http://"] {
+
+}
+sufixo
+[href$="login"] {
+   <a title="" href="........../login"
+}
+independente da posição
+[href=*"login"]{
+   <a href="login.wwww."
+}
+agrupamento de seletores (, = ou)
+h1, p, div {
+   color: red;
+}
+.texto, h1{
+   color: red
+}
+<div class="texto">
+podemos usar tag e id
+h1, [id^="botao"]{
+   color = red;
+}
+p.texto {
+   tem que ser parágrafo e ter classe texto
+}
+combinador descendente (espaço)
+li li { alterando cor dos subitens
+   color: red;
+}
+#lista-01 li { vai pegar apenas os subitens da lista-01
+   color: lightblue;
+}
+.fundo-verde #sublista-01 li {
+   color: black;
+}
+<li class="fundo-verde" id="lista-01">
+   <div>
+      <ul id="sublista-01">
+combinador filho (>)
+div > p {
+ color: red;
+}
+somente vai alterar pros elementos filhos diretos da div
+combinador adjacente (+)
+div + p {
+   só pega o irmão direto, mesma linha de identação 
+}
+combinador irmão em geral
+div ~ p {
+   pega o irmão abaixo do direto tb
+}
+largura e altura
+width
+height
+auto - valor automatico
+initial - auto tanto widht e height
+inherit - valor em relaçaõ ao elemento pai
+max-width - largura max
+min-width - largura min
+max-height - altura max
+min-height - altura min
+margin espaçamento em volta dos nossos elementos
+margin-top margem do topo
+margin-left margem da esquerda
+margin-right margem da direita
+margin-bottom - margem do rodape
+margin - coloca margem nos 4 lados
+margin 20px;
+margin 20px 10px;
+coloca 20 no topo e no rodape e 10 nas laterais
+margin 20px 10px 40px;
+coloca 20 no topo, 10 nas laterais e 40 no rodape
+margin 20px 10px 40px 30 px;
+coloca 20 no topo, 10 nas lateral direita, 40 no rodape e 30 na lateral esquerda
+margin: auto;
+centraliza na horizontal
+padding
+espaçamento interno dos elementos
+box sizing
+calculando o width = largura + borda + padding
+box-sizing: content-box; largura + borda + padding
+border-box: ele ajusta de acordo com a altura e a largura definidas para que não ultrapasse
+Cores
+cor pré definida
+mais ou menos 140 cores disponibilizadas pelos browsers
+#pre-definida {
+   color: red;
+}
+<li id="pre-definida">pré definida</li>
+cor de fundo transparente
+background: transparent; 
+pega a cor de fundo da página
+border: 2px solid currentcolor;
+pega a cor usada
+cor RGB
+   color: rgb(red,green,blue);
+   valor numérico de 0 a 255
+   color: rgb(165,120,115);
+   color: rgb(20%,35%,60%); não é muito comum %
+cor RGBA transparência
+   color: rgba(255,0,0,0.0); 
+   0.0 até 1.0 (quarto atributo)
+   podemos colocar, sem o 0
+   .0 até 1, ex: .3 (30%)
+cor Hexadecimal
+   #000000 
+   2 primeiros dígitos vermelhos, próximos 2: verde e próximos 2: azul
+   color: #000000;
+   color: #FF0000;
+cor Hexadecimal com Transparência
+   color: #0000ff00
+transparência no final valor 00 até ff
+00 totalmente transparente
+cor HSL (matiz, saturação, luminosidade)
+matiz
+   0 ou 360 é vermelho
+   120 é verde
+   240 é azul
+saturação
+   0% tem tom de cinza
+   100% cor total
+luminosidade
+   0% é preto
+   100% é branco
+   color: hsl(100,100%,50%);
+cor HSLA (matiz, saturação, luminosidade e transparência)
+   color: hsla(100,100%,50%,0.1);
+   0.0 até 1.0 (quarto atributo)
+   podemos colocar, sem o 0
+   .0 até 1, ex: .3 (30%)
+propriedade object-fit
+se deve preservar a proporção ou estourar
+fill 
+   valor padrão, ela vai ficar distorcida para preecher o tamanho definido
+   <code>object-fit: fill;</code> (padrão)
+contain
+   mantém a proporção original, mas ela aumenta para ocupar o tamanho definido sem distorcer   
+   <code>object-fit: contain;</code>
+cover
+   ocupa todo o tamanho definido, mas esconde as laterais pq ela cortou as laterais   
+   <code>object-fit: cover;</code>
+none
+   ignora totalmente a largura e tamanho do elemento pai e estoura   
+   <code>object-fit: none;</code>
+scale-down
+   escolhe o menor tamanho do elemento pai   
+   <code>object-fit: scale-down;</code>
+object-position usada em conjunto com object-fit
+   posição horizontal e vertical no nosso container
+   object-position: 50% 50%;
+   object-position: 30px 40px;
+   object-position: -30px 40px;
+   object-position: right top;
+   left center right top bottom
+alterando o fundo dos elementos
+   background-image: url("path") ;
+   background-image: linear-gradient  (lightpink,palevioletred,purple);
+   background-image: radial-gradient  (lightpink,palevioletred,purple);
+   background-image: repeating-linear-gradient(to top, palevioletred 0 20px, lightpink 20px 40px);
+várias camadas de fundo
+background-image: url("path") , url("path");
+
